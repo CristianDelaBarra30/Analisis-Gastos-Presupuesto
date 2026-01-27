@@ -7,6 +7,13 @@ concentraciones de gasto y oportunidades de optimización presupuestaria.
 ## Dataset
 Datos simulados de gastos mensuales por categoría.
 
+## Preguntas de negocio
+
+-¿Qué categorías explican el 80% del gasto?
+-¿Qué categorías muestran mayor volatilidad?
+-¿Existen desviaciones significativas vs presupuesto?
+-¿Qué categorías requieren monitoreo prioritario?
+
 ## Herramientas
 - Python (pandas, matplotlib)
 - Jupyter Notebook
