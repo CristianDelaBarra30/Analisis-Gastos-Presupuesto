@@ -4,6 +4,8 @@
 
 Este proyecto está inspirado en procesos reales de control de gestión en banca, donde se analizan gastos operacionales, desviaciones presupuestarias y comportamiento por centros de costo.
 
+---
+
 ## Descripción
 
 Este proyecto simula un análisis de control de gestión sobre gastos operacionales, similar a los procesos realizados en banca.
