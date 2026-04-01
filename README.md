@@ -6,6 +6,12 @@ Este proyecto está inspirado en procesos reales de control de gestión en banca
 
 ---
 
+## Metodología
+
+El análisis se realizó mediante consultas SQL sobre un dataset simulado, complementado con exploración en Excel para validar resultados y generar visualizaciones.
+
+---
+
 ## Descripción
 
 Este proyecto simula un análisis de control de gestión sobre gastos operacionales, similar a los procesos realizados en banca.
