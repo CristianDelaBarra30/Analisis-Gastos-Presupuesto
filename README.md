@@ -1,40 +1,58 @@
-Análisis de Gastos y Control Presupuestario
+# Análisis de Gastos y Control Presupuestario
 
-Descripción
+## Descripción
 
-Proyecto de análisis financiero enfocado en el control de gastos y desviaciones presupuestarias, simulando un entorno real de control de gestión en banca.
-Se utilizan consultas SQL para analizar el comportamiento del gasto, identificar centros de costo relevantes y evaluar variaciones mensuales.
+Este proyecto simula un análisis de control de gestión sobre gastos operacionales, similar a los procesos realizados en banca.
 
-Objetivo
- 
-Analizar el gasto por categoría y centro de costo
-Comparar gasto real vs presupuesto
-Identificar desviaciones y patrones mensuales
-Simular procesos reales de control financiero
+Se utilizan consultas SQL para analizar el comportamiento del gasto, identificar desviaciones presupuestarias y evaluar variaciones mensuales.
 
-Herramientas utilizadas
+---
 
-SQL (CTEs, JOINs, window functions)
-Excel (generación y exploración de datos)
-GitHub (documentación del proyecto)
+## Objetivo
 
-Estructura del proyecto
+El objetivo es replicar un flujo básico de análisis financiero:
 
-data/ → dataset de gastos  
-sql/ → queries de análisis  
-notebooks/ → (opcional futuro)  
-visuals/ → (opcional futuro)  
+- Entender en qué se está gastando
+- Comparar gasto real vs presupuesto
+- Identificar desviaciones
+- Analizar tendencias en el tiempo
 
-Análisis realizados
+---
 
-Gasto total por categoría
-Comparación gasto vs presupuesto
-Variaciones mensuales usando LAG()
-Ranking de centros de costo con mayor gasto
+## Dataset
 
-Insights
+El dataset fue generado en Excel simulando información de gastos, incluyendo:
 
-La categoría Administración concentra el mayor gasto total del período.
-Existen centros de costo que concentran una proporción significativa del gasto total.
-Se observan variaciones mensuales relevantes en ciertas categorías, lo que podría indicar estacionalidad o eventos específicos.
-Algunas desviaciones presupuestarias muestran oportunidades de mejora en el control del gasto.
+- Categorías (Personal, Administración, Activo fijo)
+- Centros de costo
+- Fechas
+- Montos
+
+---
+
+## Análisis realizados
+
+Las consultas SQL incluyen:
+
+- Gasto total por categoría
+- Comparación contra presupuesto
+- Variaciones mes a mes usando funciones como LAG()
+- Ranking de centros de costo con mayor gasto
+
+---
+
+## Insights
+
+A partir del análisis se pueden observar patrones como:
+
+- Concentración del gasto en ciertas categorías
+- Centros de costo con mayor impacto financiero
+- Variaciones mensuales que podrían indicar eventos específicos o estacionalidad
+
+---
+
+## Siguientes pasos
+
+- Incorporar visualizaciones
+- Automatizar el análisis
+- Trabajar con datasets más grandes y complejos
