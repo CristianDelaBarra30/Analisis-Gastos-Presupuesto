@@ -49,16 +49,22 @@ Las consultas SQL incluyen:
 
 ## Insights
 
-- La categoría Personal concentra el mayor nivel de gasto, explicado principalmente por sueldos y beneficios, lo cual es consistente con estructuras organizacionales intensivas en capital humano.
+- La categoría Personal concentra el mayor gasto total, lo que refleja una estructura de costos intensiva en capital humano. Este tipo de comportamiento es típico en organizaciones donde los costos fijos tienen un peso relevante en la operación.
 
-- A nivel de centros de costo, los asociados a Inmuebles presentan el mayor gasto total, probablemente impulsado por arriendos y costos operacionales relacionados.
+- A nivel de centros de costo, Inmuebles presenta el mayor gasto acumulado, lo que sugiere una alta carga de costos asociados a infraestructura, como arriendos y mantenimiento.
 
-- Se observan picos de gasto en el mes de octubre en los centros de mayor impacto, lo que podría estar relacionado con eventos específicos, ajustes contables o estacionalidad del negocio.
+- Se observa una concentración del gasto en pocos centros de costo, lo que indica una distribución no homogénea y posibles focos críticos de control financiero.
+
+- El mes de octubre presenta un aumento significativo en el gasto en los principales centros de costo, lo que podría estar relacionado con ajustes contables, cierre de presupuesto o eventos operacionales específicos.
+
+- La combinación de alta concentración de gasto y variaciones mensuales sugiere oportunidades para mejorar el control presupuestario y anticipación de desviaciones.
 
 ---
 
 ### Visualizaciones
 
 ![Gasto por categoría](visuals/Gasto_por_categorias.png)
+
+---
 
 ![Top centros de costo](visuals/Centros_de_costos.png)
