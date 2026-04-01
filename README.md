@@ -43,11 +43,11 @@ Las consultas SQL incluyen:
 
 ## Insights
 
-A partir del análisis se pueden observar patrones como:
+- La categoría Personal concentra el mayor nivel de gasto, explicado principalmente por sueldos y beneficios, lo cual es consistente con estructuras organizacionales intensivas en capital humano.
 
-- Concentración del gasto en ciertas categorías
-- Centros de costo con mayor impacto financiero
-- Variaciones mensuales que podrían indicar eventos específicos o estacionalidad
+- A nivel de centros de costo, los asociados a Inmuebles presentan el mayor gasto total, probablemente impulsado por arriendos y costos operacionales relacionados.
+
+- Se observan picos de gasto en el mes de octubre en los centros de mayor impacto, lo que podría estar relacionado con eventos específicos, ajustes contables o estacionalidad del negocio.
 
 ---
 
