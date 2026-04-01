@@ -51,8 +51,8 @@ A partir del análisis se pueden observar patrones como:
 
 ---
 
-## Siguientes pasos
+### Visualizaciones
 
-- Incorporar visualizaciones
-- Automatizar el análisis
-- Trabajar con datasets más grandes y complejos
+![Gasto por categoría](visuals/Gasto_por_categorias.png)
+
+![Top centros de costo](visuals/Centros_de_costos.png)
