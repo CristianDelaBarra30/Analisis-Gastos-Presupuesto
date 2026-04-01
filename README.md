@@ -63,8 +63,12 @@ Las consultas SQL incluyen:
 
 ### Visualizaciones
 
+Categorias
+
 ![Gasto por categoría](visuals/Gasto_por_categorias.png)
 
 ---
+
+Centros de costos
 
 ![Top centros de costo](visuals/Centros_de_costos.png)
