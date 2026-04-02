@@ -1,7 +1,7 @@
 WITH clean AS (
     SELECT
         TRIM(LOWER(categoria)) AS categoria,
-        monto
+        CAST(monto AS DECIMAL(18,2)) AS monto
     FROM gastos
 )
 
