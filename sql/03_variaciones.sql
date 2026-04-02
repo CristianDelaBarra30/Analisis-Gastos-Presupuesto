@@ -1,9 +1,16 @@
-WITH gasto_mensual AS (
+WITH clean AS (
+    SELECT
+        TRIM(LOWER(categoria)) AS categoria,
+        fecha,
+        monto
+    FROM gastos
+),
+gasto_mensual AS (
     SELECT 
         categoria,
         DATE_TRUNC('month', fecha) AS mes,
         SUM(monto) AS gasto_mensual
-    FROM gastos
+    FROM clean
     GROUP BY categoria, DATE_TRUNC('month', fecha)
 ),
 base AS (
