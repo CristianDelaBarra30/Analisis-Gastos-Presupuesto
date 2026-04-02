@@ -120,3 +120,13 @@ Comparación entre gasto real y presupuesto, permitiendo detectar desviaciones.
 ## Contexto profesional
 
 Este proyecto está inspirado en procesos reales de control de gestión en banca, donde el análisis de gastos, desviaciones y presupuesto forma parte del trabajo diario.
+
+## Próximos pasos
+
+Se desarrollará un dashboard en Power BI para visualizar:
+
+- gasto vs presupuesto
+- variaciones mensuales
+- concentración de costos
+
+El objetivo es transformar el análisis en una herramienta de apoyo a la toma de decisiones.
