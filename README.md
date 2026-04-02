@@ -16,7 +16,7 @@ Este proyecto replica ese flujo de análisis utilizando SQL, simulando un caso r
 
 - **SQL** — análisis principal (CTEs, JOINs, window functions como LAG y RANK)
 - **Excel** — generación del dataset y validación de resultados
-- **(Opcional futuro)** Power BI — visualización de resultados
+- **Power BI**  — visualización de resultados
 
 ---
 
