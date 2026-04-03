@@ -1,6 +1,12 @@
 WITH clean AS (
     SELECT
-        TRIM(LOWER(categoria)) AS categoria,
+        CASE 
+            WHEN TRIM(LOWER(categoria)) IN ('admin','administracion','administración') 
+                 THEN 'administración'
+            WHEN TRIM(LOWER(categoria)) IN ('af','activo fijo','activo_fijo') 
+                 THEN 'activo fijo'
+            ELSE TRIM(LOWER(categoria))
+        END AS categoria,
         fecha,
         CAST(monto AS DECIMAL(18,2)) AS monto
     FROM gastos
@@ -24,11 +30,11 @@ base AS (
         ) AS gasto_mes_anterior
     FROM gasto_mensual
 )
-
 SELECT *,
-    gasto_mensual - gasto_mes_anterior AS variacion,
+    gasto_mensual - gasto_mes_anterior AS variacion_absoluta,
     CASE 
         WHEN gasto_mes_anterior IS NULL OR gasto_mes_anterior = 0 THEN NULL
-        ELSE (gasto_mensual - gasto_mes_anterior) / gasto_mes_anterior
-    END AS porcentaje_variacion
-FROM base;
+        ELSE ROUND((gasto_mensual - gasto_mes_anterior) / gasto_mes_anterior * 100, 2)
+    END AS variacion_porcentual
+FROM base
+ORDER BY categoria, mes;
