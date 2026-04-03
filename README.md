@@ -263,7 +263,7 @@ ORDER BY diferencia DESC;
 
 ## Dashboard Power BI
 
-![Dashboard](visuals/Dashboard_control_presupuestario.gif)
+![Dashboard](visuals/Dashboard.gif)
 
 El dashboard consolida los resultados del análisis SQL en una vista ejecutiva de una página con filtros interactivos por centro de costo y categoría:
 
