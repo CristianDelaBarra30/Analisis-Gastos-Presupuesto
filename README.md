@@ -1,4 +1,4 @@
-# 📊 Análisis de Gastos y Control Presupuestario
+# Análisis de Gastos y Control Presupuestario
 
 **SQL + Power BI** | Simulación de entorno real en banca
 
