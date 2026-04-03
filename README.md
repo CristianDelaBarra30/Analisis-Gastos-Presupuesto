@@ -1,8 +1,8 @@
 # Análisis de gasto vs presupuesto
 
-Este proyecto nace de la necesidad de entender cómo se comportan los gastos en relación al presupuesto, algo que es bastante común en áreas de control de gestión.
+Este proyecto busca replicar un análisis típico de control de gestión, enfocado en entender el comportamiento del gasto y su relación con el presupuesto.
 
-La idea fue replicar un flujo simple pero realista de análisis financiero, usando SQL para trabajar los datos y Power BI para visualizar resultados.
+La idea fue construir un flujo simple pero representativo de lo que se realiza en entornos financieros reales.
 
 ---
 
@@ -17,39 +17,57 @@ Ambos contienen información por categoría, centro de costo y fecha.
 
 ---
 
-## Qué se hizo
+## Proceso
 
-Primero se realizó una limpieza de datos, ya que algunas columnas venían con problemas típicos como espacios, formatos distintos o inconsistencias en texto.
+Primero se realizó una limpieza de datos, considerando problemas comunes como:
 
-Luego se desarrollaron distintas consultas en SQL para:
+- Espacios en blanco
+- Diferencias de formato
+- Inconsistencias en texto
 
-- Ver el gasto total por categoría
-- Comparar gasto real vs presupuesto
-- Analizar variaciones mes a mes
-- Identificar los centros de costo con mayor gasto
+Se utilizaron funciones como TRIM, LOWER, REPLACE y CAST.
+
+---
+
+## Análisis
+
+Se desarrollaron distintas consultas en SQL para:
+
+- Analizar el gasto total por categoría  
+- Comparar gasto real vs presupuesto  
+- Evaluar variaciones mes a mes usando LAG  
+- Identificar centros de costo con mayor gasto  
 
 ---
 
 ## Visualización
 
-Se armó un dashboard en Power BI para poder ver:
+Se construyó un dashboard en Power BI para facilitar el análisis:
 
-- Gasto vs presupuesto
-- Evolución mensual
-- Principales centros de costo
+- Gasto vs presupuesto  
+- Evolución mensual  
+- Ranking de centros de costo  
+- KPIs financieros  
 
-La idea fue que fuera algo simple pero útil, similar a lo que usaría un equipo financiero.
+---
+
+## Archivos del proyecto
+
+- data/ → datasets  
+- sql/ → queries  
+- visuals/ → imágenes y gif  
+- dashboard.pbix → dashboard Power BI  
 
 ---
 
 ## Conclusiones
 
-Se observa que el gasto se mantiene en general bajo el presupuesto, aunque existen concentraciones importantes en ciertos centros de costo.
+El gasto se mantiene en general bajo el presupuesto, aunque existen concentraciones relevantes en ciertos centros de costo.
 
-También hay variaciones mensuales que podrían requerir análisis más detallado.
+También se observan variaciones mensuales que podrían requerir análisis adicional.
 
 ---
 
-## Notas
+## Contexto
 
-El proyecto está inspirado en tareas reales de control de gestión en banca, donde este tipo de análisis se realiza de forma frecuente.
+El proyecto está inspirado en tareas reales de control de gestión en banca, donde este tipo de análisis se utiliza para apoyar la toma de decisiones financieras.
