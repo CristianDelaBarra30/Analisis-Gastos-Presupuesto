@@ -1,16 +1,15 @@
--- Cleaning gastos
 SELECT
-    TRIM(LOWER(categoria)) AS categoria,
-    REPLACE(TRIM(LOWER(centro_costo)),'-','') AS centro_costo,
+    CASE 
+        WHEN TRIM(LOWER(categoria)) IN ('admin', 'administracion', 'administración') 
+             THEN 'administración'
+        WHEN TRIM(LOWER(categoria)) IN ('af', 'activo fijo', 'activo_fijo', 'activo fijo') 
+             THEN 'activo fijo'
+        WHEN TRIM(LOWER(categoria)) IN ('personal', ' personal') 
+             THEN 'personal'
+        ELSE TRIM(LOWER(categoria))
+    END AS categoria,
+    REPLACE(TRIM(LOWER(centro_costo)), '-', '') AS centro_costo,
     CAST(monto AS DECIMAL(18,2)) AS monto,
     fecha
 FROM gastos;
 
--- Cleaning presupuesto
-SELECT
-    TRIM(LOWER(categoria)) AS categoria,
-    REPLACE(TRIM(LOWER(centro_costo)),'-','') AS centro_costo,
-    CAST(monto_presupuestado AS DECIMAL(18,2)) AS monto_presupuestado,
-    fecha,
-    version_presupuesto
-FROM presupuesto;
